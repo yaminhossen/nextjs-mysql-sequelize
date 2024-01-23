@@ -8,6 +8,11 @@ var corOptions = {
 }
 
 
+// router
+
+const router = require('./routes/productRoutes.js')
+app.use('/api/product', router)
+
 // middleware
 app.use(cors(corOptions))
 app.use(express.json())
