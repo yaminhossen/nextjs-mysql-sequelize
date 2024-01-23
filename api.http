@@ -1,6 +1,9 @@
 GET http://localhost:8080/api/product/allProducts HTTP/1.1
 
 ###
+GET http://localhost:8080/api/product/allReviews HTTP/1.1
+
+###
 GET http://localhost:8080/api/product/published HTTP/1.1
 
 ###
@@ -19,6 +22,17 @@ content-type: application/json
     "description": "This is very good",
     "published" : true
 }
+
+###
+POST http://localhost:8080/api/product/addReview HTTP/1.1
+content-type: application/json
+
+{
+    "rating": 2,
+    "description": "This is very good"
+}
+
+
 ###
 PUT http://localhost:8080/api/product/2 HTTP/1.1
 content-type: application/json
