@@ -76,6 +76,7 @@ const getProductReviews = async (req, res) => {
         }],
         where: { id: 2 }
     })
+    res.status(200).send(data)
 }
 
 module.exports = {
