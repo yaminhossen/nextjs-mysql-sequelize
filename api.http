@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/product/allProducts HTTP/1.1
+
+###
+GET http://localhost:8080/api/product/published HTTP/1.1
+
+###
+GET http://localhost:8080/api/product/3 HTTP/1.1
+
+###
+DELETE http://localhost:8080/api/product/1 HTTP/1.1
+
+###
+POST http://localhost:8080/api/product/addProduct HTTP/1.1
+content-type: application/json
+
+{
+    "title": "pendrive",
+    "price": 320,
+    "description": "This is very good",
+    "published" : true
+}
+###
+PUT http://localhost:8080/api/product/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Iphone13 pro max",
+    "price": 1000,
+    "description": "This is very good",
+    "published" : false
+}
