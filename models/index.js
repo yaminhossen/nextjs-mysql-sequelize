@@ -42,6 +42,7 @@ db.sequelize.sync({force: false})
 
 
 // One to Many Relation 
+// this would be work for the controller 
 
 db.products.hasMany(db.reviews, {
     foreignKey: 'product_id',
